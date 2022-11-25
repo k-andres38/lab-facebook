@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/social_media/fuente_letra/SFPRODISPLAYREGULAR.OTF);
+}
+
+/*Maquetacion general partea a izquerda*/
+
+body{
+    background-color: #f0f2f5;
+}
+main{
+    width: 67rem;
+    margin: auto;
+    
+}
+
+section{
+  
+    display: flex;
+    
+   
+    padding-bottom: 132px;
+   
+    
+
+    
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 190px;
+    height: 70px;
+    margin-left: -22px;
+}
+.recientes,
+.login{
+    
+    width: 100%;
+    
+   
+    
+    
+}
+.recientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding-left: 40px;
+   width: 70%;
+}
+
+.inicio_sesion{
+    font-family: myFirstFont;
+    color: black;
+    font-weight: normal;
+    font-size: 28px;
+    /*maquetacion*/
+   
+    
+}
+.hazclick{
+    font-size: 15px;
+    font-family:myFirstFont ;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: #606770;
+}
+
+@media screen and (max-width:480px) {
+    section{
+        flex-wrap: wrap;
+    }
+}
+
+/*Maquetacion general. aqui voy hacer las cuentas creadas*/
+
+.container{
+   
+    text-align: center;    
+  
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuenta{
+    width: 180px;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+   
+
+    
+}
+.cuenta img{
+    width: 100%;
+    height:100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+.nombre{
+    font-family: myFirstFont;
+    font-size:1.5em;
+    font-weight: 100;
+}
+.nombre span{
+    color: #4c4f52;
+    font-size: 0.8em;
+    font-family: myFirstFont;
+    font-weight: 100;
+}
+
+.contenido_nombre{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* aqui empieza el lado del login*/
+
+.login{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(115, 113, 111, 0.45);
+    margin-top: 60p x;
+    width: 70%;
+    
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+form input{
+    height: 35px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 15px;
+    font-size: 1.1em;
+    
+    border-style: hidden;
+    border: 1px solid #9ca2ab;   
+    
+}
+form input::placeholder{
+    color: #9ca2ab;
+    font-size: 15px;
+    font-family: 'Helvetica Neue', 'Helvetica';
+}
+
+form input:focus{
+    border-color: #166FE5;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 1px #166FE5;
+   
+    
+    outline: 0 none;
+    
+    
+    
+}
+button{
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 15px;
+    font-size: 1.1em;
+    border: none;  
+    
+    background-color: #166FE5;
+    color: white;
+    cursor: pointer;
+}
+
+.crear_cuenta{
+    margin: auto;
+    background-color:#36A420;
+    width: 200px;
+    
+}
+hr{
+     
+    
+    border-top: 1px;
+    border-color: rgb(181, 177, 177);
+    
+    
+   
+   
+}
+
+/*Retoque*/
+a{
+    text-decoration: none;
+   
+}
+footer{
+    margin:2em auto;
+    width: 25em;
+    font-size: 0.9em;
+    font-family: 'Helvetica Neue', 'Helvetica';
+    text-align: center;
+}
+footer span{
+    color: black;
+}
+ .pagina:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.password:hover{
+    text-decoration: underline;
+    text-decoration-color:#166FE5;
+}
+.olvidar_password{
+    color: #166FE5;
+}
+.negro{
+    color: black;
+}
+
+.contenido_login{
+    display: flex;
+    margin-top: 145px;
+    flex-direction: column;
+   
+    align-items: center;
+    
+    
+    width: 100%;
+    
+}
